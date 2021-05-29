@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         subtractButton()
         multiplyButton()
         divideButton()
+        clearButton()
     }
 
     private fun addButton() {
@@ -76,6 +77,19 @@ class MainActivity : AppCompatActivity() {
             val result = number1 / number2
 
             edtAW.setText(result.toString())
+        }
+    }
+
+    private fun clearButton() {
+        val edtFN = findViewById<EditText>(R.id.edt1)
+        val edtSN = findViewById<EditText>(R.id.edt2)
+        val edtAW = findViewById<EditText>(R.id.edt3)
+        val button = findViewById<Button>(R.id.btnClear)
+
+        button.setOnClickListener {
+            edtFN.text.clear()
+            edtSN.text.clear()
+            edtAW.text.clear()
         }
     }
 }

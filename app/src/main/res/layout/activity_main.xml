@@ -70,4 +70,11 @@
         android:layout_gravity="center"
         android:text="Divide"/>
 
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Clear"/>
+
 </LinearLayout>
